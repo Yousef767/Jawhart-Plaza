@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../media/tap-icon.svg" type="image/x-icon" />
+  <link rel="shortcut icon" href="../media/tap-icon.svg" />
+  <link rel="apple-touch-icon" href="../media/tap-icon.svg" />
+  <meta name="color-scheme" content="light only">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+  <link rel="stylesheet" href="../js/swiper-bundle.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <!-- Leaflet JavaScript -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="../scss/style.css">
+  <title>Naqaa</title>
+</head>
+
+<body>
+  <!-- Start Search -->
+  <div class="s-n">
+    <div class="box">
+      <form class="search">
+        <input type="search" placeholder="البحث ...">
+        <button type="submit">
+          <i class="fa-regular fa-magnifying-glass"></i></a>
+        </button>
+      </form>
+    </div>
+    <div id="close2"></div>
+  </div>
+  <!-- End Search -->
+  <!-- Start Nav -->
+  <nav>
+    <div class="box f-s">
+      <a href="../ar-index.html" class="logo">
+        <img src="../media/logo.png" alt="">
+      </a>
+      <div class="links">
+        <div class="ls">
+          <ul class="mainLinks">
+            <li><a class="link" href="../index.html">الرئيسية</a></li>
+            <li><a class="link" href="../pages/about.html"> عن نقاء</a></li>
+            <li><a class="link" href="../pages/portfolio.html">مشاريعنا</a></li>
+            <li><a class="link" href="../pages/faq.html"> اسئلة شائعة</a></li>
+            <li><a class="link" href="../pages/contact.html"> اتصل بنا</a></li>
+          </ul>
+          <div class="mLinks">
+            <button id="sbtn"><i class="fa-regular fa-magnifying-glass"></i> </button>
+            <button class="cart"><i class="fa-solid fa-cart-shopping"></i> <span>0</span></button>
+            <a class="fw500" href="../pages/login.html">تسجيل الدخول</a>
+            <div class="drop"><a href="##">
+                <img class="lang" src="../media/icons/language.png" alt="">AR<img class="drop-icon"
+                  src="../media/icons/arrow.png" alt=""></a>
+              <span class="dropMenu">
+                <a href="../en-index.html"><img class="lang" src="../media/icons/language.png" alt=""> EN </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="last">
+        <div class="mLinks">
+          <button id="sbtn"><i class="fa-regular fa-magnifying-glass"></i> </button>
+          <button class="cart"><i class="fa-solid fa-cart-shopping"></i> <span>0</span></button>
+          <a class="fw500" href="../pages/login.html">تسجيل الدخول</a>
+          <div class="drop"><a href="##">
+              <img class="lang" src="../media/icons/language.png" alt="">AR<img class="drop-icon"
+                src="../media/icons/arrow.png" alt=""></a>
+            <span class="dropMenu">
+              <a href="../en-index.html"><img class="lang" src="../media/icons/language.png" alt=""> EN </a>
+            </span>
+          </div>
+        </div>
+        <button class="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!-- End Nav -->
+  <!-- Start Cart -->
+  <div class="cartInner">
+    <div class="cartBody">
+      <h2>ملخص الطلب : <i class="fa-light fa-backward-fast"></i></h2>
+      <div class="itemsIncart">
+        <div class="itDcart">
+          <img src="../media/DONE1OUT.png" alt="">
+          <div class="itdd">
+            <h3>بئر سطحي | بمضخة كهربائية</h3>
+            <span>250$</span>
+          </div>
+          <i class="fa-regular fa-trash-can"></i>
+        </div>
+        <div class="itDcart">
+          <img src="../media/DONE1OUT.png" alt="">
+          <div class="itdd">
+            <h3>بئر سطحي | بمضخة كهربائية</h3>
+            <span>250$</span>
+          </div>
+          <i class="fa-regular fa-trash-can"></i>
+        </div>
+      </div>
+      <div class="total">
+        <span>المجموع :</span>
+        <span>500$</span>
+      </div>
+      <div class="btns btns3">
+        <a href="./pages/checkout.html">
+          الذهاب للدفع
+        </a>
+        <button id="continue">
+          متابعة التسوق
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- End Cart -->
+
+
+
+  <div class="home pageBanner pageBanner2 pageBanner3">
+    <img class="pageBannerImage" src="../media/contact.png" alt="">
+    <div class="box ktx z2">
+      <h1>
+        نقاء الخير لحفر الأبار وبناء المساجد
+      </h1>
+      <p>
+        نحو حياة أفضل: نقدم حلولًا مستدامة لحفر آبار المياه في المناطق النائية والفقيرة، لتوفير مياه نقية تروي العطش
+        وتساهم في بناء مستقبل أكثر إشراقًا. </p>
+    </div>
+  </div>
+
+  <div class="contactPage">
+    <div class="box contact ">
+      <div class="formcontrol">
+        <h2>تسجيل الدخول</h2>
+        <form class="form">
+          <div class="input">
+            <span> البريد الالكتروني :</span>
+            <input type="text" placeholder=" البريد الالكتروني">
+          </div>
+          <div class="input">
+            <span> كلمة المرور :</span>
+            <div class="select">
+              <input type="password" placeholder="كلمة المرور">
+              <i class="fa-light fa-eye-slash" id="passwordShow"></i>
+            </div>
+          </div>
+          <div class="forgot">
+            لا تملك حساب ؟ <a href="./signup.html"> انشاء حساب</a>
+          </div>
+          <button class="store moreBtn mla">تسجيل الدخول</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- start footer -->
+  <footer>
+    <div class="box footer">
+      <div class="footerLogo">
+        <img src="../media/footerLogo.png" alt="">
+        <div class="aboutText colorfff">
+          <p>
+            نقاء الخير مؤسسة إنسانية تهدف إلى توفير المياه النظيفة للمناطق النائية والفقيرة عبر حفر الآبار المستدامة.
+            نعمل على تحسين حياة المجتمعات المحرومة.
+          </p>
+        </div>
+      </div>
+      <div class="footerLinkGroup">
+        <div class="linkGroup">
+          <h2>روابط مفيدة</h2>
+          <ul>
+            <li><a href="../index.html"><img src="../media/icons/footerLink.svg" alt=""> الرئيسية </a></li>
+            <li><a href="../pages/about.html"><img src="../media/icons/footerLink.svg" alt=""> عن نقاء </a></li>
+            <li><a href="../pages/portfolio.html"><img src="../media/icons/footerLink.svg" alt=""> مشاريعنا</a></li>
+            <li><a href="../pages/faq.html"><img src="../media/icons/footerLink.svg" alt=""> اسئلة شائعة</a></li>
+            <li><a href="../pages/contact.html"><img src="../media/icons/footerLink.svg" alt=""> اتصل بنا</a></li>
+          </ul>
+        </div>
+        <div class="linkGroup cont">
+          <h2>تواصل معنا</h2>
+          <ul>
+            <li><a href="##"><img src="../media/icons/location.png" alt="">الأردن - عمان - الرابية</a></li>
+            <li><a href="tel:+971554491609"><img src="../media/icons/call.png" alt=""> +971554491609 </a></li>
+            <li><a href="tel:+962792317771"><img src="../media/icons/call.png" alt=""> +962792317771 </a></li>
+            <li><a href="tel:+97450409081"><img src="../media/icons/call.png" alt=""> +97450409081 </a></li>
+            <li><a href="mailto:info@naqaa.com"><img src="../media/icons/mail.png" alt=""> info@naqaa.com</a></li>
+          </ul>
+          <div class="media">
+            <a href="##"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="##"><i class="fa-brands fa-instagram"></i></a>
+            <a href="##"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="##"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box copyInner">
+      <div class="copy">
+        جميع الحقوق محفوظة لنقاء الخير 2024
+      </div>
+      <a href="https://sigmaagencyjo.com" target="_blank" class="copy">
+        تصميم وتطوير سيجما للحلول الرقمية - Sigma Agency
+      </a>
+    </div>
+  </footer>
+  <!-- end footer -->
+  <script src="../js/main.js"></script>
+  <script src="../js/faqs.js"></script>
+  <script src="../js/map.js"></script>
+  <script src="../js/search.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
