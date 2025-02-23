@@ -11,10 +11,6 @@
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
   <link rel="stylesheet" href="../js/swiper-bundle.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-  <!-- Leaflet JavaScript -->
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <link rel="stylesheet" href="../enscss/style.css">
   <title>Jawhart Plaza</title>
 </head>
@@ -129,154 +125,90 @@
   </nav>
   <!-- End Nav -->
 
+  <div class="box textPageInner">
+    <h2>Terms & Conditions</h2>
+    <div class="tcont">
+      <h2>Introduction</h2>
+      <p>
+        Welcome to [Your Store Name]! These Terms & Conditions govern your use of our website and services. By accessing
+        or using our website, you agree to comply with and be bound by these terms. If you do not agree with any part of
+        these terms, you must not use our website or services.
+      </p>
 
+      <h2>Eligibility</h2>
+      <p>
+        To use our website and services, you must be at least the age of majority in your jurisdiction or have the
+        consent of a legal guardian. By using this website, you confirm that you meet these requirements.
+      </p>
 
+      <h2>Account Registration</h2>
+      <p>
+        To access certain features of our website, you may be required to create an account. You are responsible for
+        maintaining the confidentiality of your account information and for all activities that occur under your
+        account. You agree to notify us immediately of any unauthorized use of your account.
+      </p>
 
+      <h2>Product Information</h2>
+      <p>
+        We strive to provide accurate and up-to-date information about our products, including descriptions, pricing,
+        and availability. However, we do not guarantee that all information is error-free, and we reserve the right to
+        correct any errors, inaccuracies, or omissions at any time.
+      </p>
 
-  <div class="home pageBanner pageBanner2 pageBanner4 pageBanner5">
-    <img class="pageBannerImage" src="../media/checkout.png" alt="">
-  </div>
+      <h2>Orders and Payments</h2>
+      <p>
+        All orders are subject to acceptance and availability. By placing an order, you agree to pay the specified price
+        and any applicable taxes or fees. We reserve the right to cancel or refuse any order for any reason, including
+        suspected fraud or unauthorized activity.
+      </p>
 
-  <div class="contactPage">
-    <form class="box contact max1000">
-      <div class="formcontrol bgtrans">
-        <h2> Billing details</h2>
-        <div class="form">
-          <div class="inputs">
-            <div class="input">
-              <span>Full Name:</span>
-              <input type="text" placeholder="Full Name">
-            </div>
-            <div class="input">
-              <span>Phone Number:</span>
-              <input type="tel" placeholder="Phone Number with  Code">
-            </div>
-          </div>
-          <div class="inputs">
-            <div class="input">
-              <span>Country:</span>
-              <div class="select">
-                <select>
-                  <option value="">Choose Country</option>
-                  <option value="jordan">Jordan</option>
-                  <option value="saudi_arabia">Saudi Arabia</option>
-                  <option value="uae">UAE</option>
-                  <option value="qatar">Qatar</option>
-                  <option value="kuwait">Kuwait</option>
-                  <option value="oman">Oman</option>
-                  <option value="bahrain">Bahrain</option>
-                  <option value="syria">Syria</option>
-                  <option value="lebanon">Lebanon</option>
-                  <option value="palestine">Palestine</option>
-                  <option value="yemen">Yemen</option>
-                  <option value="egypt">Egypt</option>
-                  <option value="morocco">Morocco</option>
-                  <option value="algeria">Algeria</option>
-                  <option value="tunisia">Tunisia</option>
-                  <option value="libya">Libya</option>
-                  <option value="sudan">Sudan</option>
-                  <option value="usa">USA</option>
-                  <option value="uk">UK</option>
-                  <option value="ue">EU</option>
-                  <option value="somalia">Somalia</option>
-                  <option value="mauritania">Mauritania</option>
-                  <option value="djibouti">Djibouti</option>
-                  <option value="comoros">Comoros</option>
-                  <option value="other">Other Country</option>
-                </select>
-                <i class="fa-regular fa-angle-down"></i>
-              </div>
-            </div>
-            <div class="input">
-              <span>City:</span>
-              <input type="text" placeholder="City">
-            </div>
-          </div>
-          <div class="input">
-            <span>Email:</span>
-            <input type="text" placeholder="Email">
-          </div>
-          <div class="input">
-            <span>Address:</span>
-            <input type="text" placeholder="Address">
-          </div>
-          <div class="input">
-            <span>Apartment, Suite, etc.:</span>
-            <input type="text" placeholder="Apartment, Suite, etc.">
-          </div>
-          <div class="input">
-            <span>Order notes (optional)</span>
-            <textarea placeholder="Order notes (optional)"></textarea>
-          </div>
-        </div>
-      </div>
-      <div class="dflexde">
-        <div class="cheCard">
-          <div class="cardc">
-            <h2>Order Summary</h2>
-            <div class="toItems">
-              <span>4 Items</span> - <span>1200.00$</span>
-            </div>
-            <div class="nubs">
-              <div class="nrow">
-                <span>Shipping</span>
-                <span>15.00$</span>
-              </div>
-              <div class="nrow">
-                <span>Subtotal</span>
-                <span>1200.00$</span>
-              </div>
-              <div class="nrow">
-                <span>Taxes</span>
-                <span>0.13$</span>
-              </div>
-            </div>
-            <div class="toItems">
-              <span>Total</span> - <span>1215.13$</span>
-            </div>
-            <div class="cop">
-              <div class="input applyInput">
-                <input type="text" placeholder="Gift Card or Discount Code...">
-                <button type="button" class="apply">Apply</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <h2>Payment method</h2>
-        <div class="payOptions">
-          <label for="o1">
-            <span>
-              <input type="radio" id="o1" name="g2">
-              cash on delivery
-            </span>
-            <p>
-              Pay with cash upon delivery</p>
-          </label>
-          <label for="o2">
-            <span>
-              <input type="radio" id="o2" name="g2">
-              Online
-            </span>
-            <p>
-              Pay with visa or mastercard </p>
-          </label>
-        </div>
-        <div class="payMeth">
-          <p>
-            Your personal data will be used to process your order, support your experience throughout this website, and
-            for other purposes described in our <a href="./privacy-policy.html">privacy policy</a> .
-          </p>
-          <div class="label">
-            <input type="checkbox" id="a1">
-            <label for="a1">
-              I have read and agree to the website <a href="./terms-conditions.html">terms and conditions</a>
-            </label>
-          </div>
-          <a href="./pay.html" class="toPay">Complete Order</a>
-          <!-- <button type="submit"  class="toPay">Complete Order</button> -->
-        </div>
-      </div>
-    </form>
+      <h2>Shipping and Delivery</h2>
+      <p>
+        We aim to process and ship orders promptly. Delivery times are estimates and may vary depending on your location
+        and other factors beyond our control. We are not responsible for delays caused by shipping carriers or
+        unforeseen circumstances.
+      </p>
+
+      <h2>Returns and Refunds</h2>
+      <p>
+        If you are not satisfied with your purchase, you may return it in accordance with our Return Policy. Refunds
+        will be issued for eligible items, subject to the terms outlined in our policy. Please review our Return Policy
+        for detailed instructions and eligibility requirements.
+      </p>
+
+      <h2>Intellectual Property</h2>
+      <p>
+        All content on this website, including text, images, logos, and designs, is the property of [Your Store Name] or
+        its licensors and is protected by intellectual property laws. You may not use, reproduce, or distribute any
+        content without our prior written permission.
+      </p>
+
+      <h2>Limitation of Liability</h2>
+      <p>
+        To the fullest extent permitted by law, [Your Store Name] shall not be liable for any indirect, incidental, or
+        consequential damages arising out of your use of this website or the products purchased through it. Our total
+        liability for any claim related to your use of the website or products is limited to the amount you paid for the
+        product in question.
+      </p>
+
+      <h2>Changes to Terms</h2>
+      <p>
+        We reserve the right to update or modify these Terms & Conditions at any time. Any changes will be effective
+        immediately upon posting on this website. Your continued use of the website after any changes constitutes your
+        acceptance of the revised terms.
+      </p>
+
+      <h2>Governing Law</h2>
+      <p>
+        These Terms & Conditions are governed by the laws of [Your Country/State], and any disputes arising from these
+        terms shall be resolved in the courts of [Your Country/State].
+      </p>
+
+      <h2>Contact Us</h2>
+      <p>
+        If you have any questions or concerns about these Terms & Conditions, please <a href="./contact.html">contact us</a>.
+      </p>
+    </div>
   </div>
 
 
@@ -334,7 +266,10 @@
     </div>
   </footer>
   <!-- end footer -->
+
+  <script src="../js/products.js"></script>
   <script src="../js/main.js"></script>
+  <script src="../js/faqs.js"></script>
   <script src="../js/search.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>

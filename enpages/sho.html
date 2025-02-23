@@ -1,3 +1,4 @@
+s
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,12 +12,8 @@
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
   <link rel="stylesheet" href="../js/swiper-bundle.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-  <!-- Leaflet JavaScript -->
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <link rel="stylesheet" href="../enscss/style.css">
-  <title>Jawhart Plaza</title>
+  <title>Jawhart plaza</title>
 </head>
 
 <body>
@@ -132,153 +129,175 @@
 
 
 
-
-  <div class="home pageBanner pageBanner2 pageBanner4 pageBanner5">
-    <img class="pageBannerImage" src="../media/checkout.png" alt="">
+  <div class="home pageBanner">
+    <img class="pageBannerImage" src="../media/portfolio.png" alt="">
+    <div class="box ktx z2">
+      <h1>Request Your Project with Naqaa</h1>
+      <p>
+        Join us in making a real difference by requesting a well or water project that meets the needs of the most
+        underserved communities. With Naqaa, we transform your contributions into sustainable impacts that provide clean
+        water, offer hope, and change the lives of many. Start now and become a partner in goodness.
+      </p>
+    </div>
   </div>
 
-  <div class="contactPage">
-    <form class="box contact max1000">
-      <div class="formcontrol bgtrans">
-        <h2> Billing details</h2>
-        <div class="form">
-          <div class="inputs">
-            <div class="input">
-              <span>Full Name:</span>
-              <input type="text" placeholder="Full Name">
+
+  <div class="bgfff p70-0">
+    <div class="box proandf pr">
+      <form class="filterInner">
+        <div class="filter">
+          <div class="filtSection">
+            <h3>Category:</h3>
+            <div class="labelinput">
+              <input type="checkbox" id="cat1">
+              <label for="cat1">Well Drilling</label>
             </div>
-            <div class="input">
-              <span>Phone Number:</span>
-              <input type="tel" placeholder="Phone Number with  Code">
+            <div class="labelinput">
+              <input type="checkbox" id="cat2">
+              <label for="cat2">Mosque Construction</label>
             </div>
           </div>
-          <div class="inputs">
-            <div class="input">
-              <span>Country:</span>
-              <div class="select">
-                <select>
-                  <option value="">Choose Country</option>
-                  <option value="jordan">Jordan</option>
-                  <option value="saudi_arabia">Saudi Arabia</option>
-                  <option value="uae">UAE</option>
-                  <option value="qatar">Qatar</option>
-                  <option value="kuwait">Kuwait</option>
-                  <option value="oman">Oman</option>
-                  <option value="bahrain">Bahrain</option>
-                  <option value="syria">Syria</option>
-                  <option value="lebanon">Lebanon</option>
-                  <option value="palestine">Palestine</option>
-                  <option value="yemen">Yemen</option>
-                  <option value="egypt">Egypt</option>
-                  <option value="morocco">Morocco</option>
-                  <option value="algeria">Algeria</option>
-                  <option value="tunisia">Tunisia</option>
-                  <option value="libya">Libya</option>
-                  <option value="sudan">Sudan</option>
-                  <option value="usa">USA</option>
-                  <option value="uk">UK</option>
-                  <option value="ue">EU</option>
-                  <option value="somalia">Somalia</option>
-                  <option value="mauritania">Mauritania</option>
-                  <option value="djibouti">Djibouti</option>
-                  <option value="comoros">Comoros</option>
-                  <option value="other">Other Country</option>
-                </select>
-                <i class="fa-regular fa-angle-down"></i>
+          <div class="filtSection">
+            <h3>Country:</h3>
+            <div class="labelinput">
+              <input type="checkbox" id="country0">
+              <label for="country0">Egypt</label>
+            </div>
+            <div class="labelinput">
+              <input type="checkbox" id="country1">
+              <label for="country1">India</label>
+            </div>
+            <div class="labelinput">
+              <input type="checkbox" id="country2">
+              <label for="country2">Pakistan</label>
+            </div>
+            <div class="labelinput">
+              <input type="checkbox" id="country3">
+              <label for="country3">Bangladesh</label>
+            </div>
+            <div class="labelinput">
+              <input type="checkbox" id="country4">
+              <label for="country4">Nepal</label>
+            </div>
+            <div class="labelinput">
+              <input type="checkbox" id="country5">
+              <label for="country5">Sri Lanka</label>
+            </div>
+          </div>
+          <div class="filtSection pb0">
+            <h3>Price Range:</h3>
+            <div class="pr">
+              <div class="r-container">
+                <div class="track"></div>
+                <div class="range" id="rangeTrack"></div>
+                <input type="range" id="rangeMin" min="100" max="5000" step="100" value="100" oninput="updateRange()">
+                <input type="range" id="rangeMax" min="100" max="5000" step="100" value="5000" oninput="updateRange()">
               </div>
             </div>
-            <div class="input">
-              <span>City:</span>
-              <input type="text" placeholder="City">
+            <div class="value-display">
+              <span id="rangeValue">$0 - $5000</span>
             </div>
           </div>
+        </div>
+        <button>Filter Projects</button>
+      </form>
+      <div class="projectsInner">
+        <form class="projectsSearch">
+          <button type="button" class="fa-solid fa-filter-list"></button>
           <div class="input">
-            <span>Email:</span>
-            <input type="text" placeholder="Email">
+            <div class="select">
+              <input type="search" placeholder="Search for project name ...">
+              <button type="submit" class="fa-regular fa-magnifying-glass"></button>
+            </div>
           </div>
-          <div class="input">
-            <span>Address:</span>
-            <input type="text" placeholder="Address">
+          <button class="store moreBtn" type="submit">Search for Project <i
+              class="fa-regular fa-magnifying-glass"></i></button>
+        </form>
+        <div class="projects">
+          <div class="prod prod2">
+            <div class="prodImage">
+              <img src="../media/DONE1OUT.png" alt="">
+            </div>
+            <h2>Surface Well | With Electric Pump</h2>
+            <span>$250.00</span>
+            <div class="btns">
+              <button><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+              <a href="./product.html">Read More</a>
+            </div>
           </div>
-          <div class="input">
-            <span>Apartment, Suite, etc.:</span>
-            <input type="text" placeholder="Apartment, Suite, etc.">
+          <div class="prod prod2">
+            <div class="prodImage">
+              <img src="../media/DONE1OUT.png" alt="">
+            </div>
+            <h2>Surface Well | With Electric Pump</h2>
+            <span>$250.00</span>
+            <div class="btns">
+              <button><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+              <a href="./product.html">Read More</a>
+            </div>
           </div>
-          <div class="input">
-            <span>Order notes (optional)</span>
-            <textarea placeholder="Order notes (optional)"></textarea>
+          <div class="prod prod2">
+            <div class="prodImage">
+              <img src="../media/DONE1OUT.png" alt="">
+            </div>
+            <h2>Surface Well | With Electric Pump</h2>
+            <span>$250.00</span>
+            <div class="btns">
+              <button><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+              <a href="./product.html">Read More</a>
+            </div>
+          </div>
+          <div class="prod prod2">
+            <div class="prodImage">
+              <img src="../media/DONE1OUT.png" alt="">
+            </div>
+            <h2>Surface Well | With Electric Pump</h2>
+            <span>$250.00</span>
+            <div class="btns">
+              <button><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+              <a href="./product.html">Read More</a>
+            </div>
+          </div>
+          <div class="prod prod2">
+            <div class="prodImage">
+              <img src="../media/DONE1OUT.png" alt="">
+            </div>
+            <h2>Surface Well | With Electric Pump</h2>
+            <span>$250.00</span>
+            <div class="btns">
+              <button><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+              <a href="./product.html">Read More</a>
+            </div>
+          </div>
+          <div class="prod prod2">
+            <div class="prodImage">
+              <img src="../media/DONE1OUT.png" alt="">
+            </div>
+            <h2>Surface Well | With Electric Pump</h2>
+            <span>$250.00</span>
+            <div class="btns">
+              <button><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+              <a href="./product.html">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="paginationCont">
+          <div class="page">Page <span>1-20</span> of <span>365</span></div>
+          <div class="paginations">
+            <ul class="spans">
+              <li><a href="##" class="page-link"><img src="../media/icons/arrow-prev.svg" alt=""></a></li>
+              <li><a href="##" class="page-link active">1</a></li>
+              <li><a href="##" class="page-link">2</a></li>
+              <li><a href="##" class="page-link">3</a></li>
+              <li><a href="##" class="page-link">...</a></li>
+              <li><a href="##" class="page-link">13</a></li>
+              <li><a href="##" class="page-link"><img src="../media/icons/arrow-next.svg" alt=""></a></li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="dflexde">
-        <div class="cheCard">
-          <div class="cardc">
-            <h2>Order Summary</h2>
-            <div class="toItems">
-              <span>4 Items</span> - <span>1200.00$</span>
-            </div>
-            <div class="nubs">
-              <div class="nrow">
-                <span>Shipping</span>
-                <span>15.00$</span>
-              </div>
-              <div class="nrow">
-                <span>Subtotal</span>
-                <span>1200.00$</span>
-              </div>
-              <div class="nrow">
-                <span>Taxes</span>
-                <span>0.13$</span>
-              </div>
-            </div>
-            <div class="toItems">
-              <span>Total</span> - <span>1215.13$</span>
-            </div>
-            <div class="cop">
-              <div class="input applyInput">
-                <input type="text" placeholder="Gift Card or Discount Code...">
-                <button type="button" class="apply">Apply</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <h2>Payment method</h2>
-        <div class="payOptions">
-          <label for="o1">
-            <span>
-              <input type="radio" id="o1" name="g2">
-              cash on delivery
-            </span>
-            <p>
-              Pay with cash upon delivery</p>
-          </label>
-          <label for="o2">
-            <span>
-              <input type="radio" id="o2" name="g2">
-              Online
-            </span>
-            <p>
-              Pay with visa or mastercard </p>
-          </label>
-        </div>
-        <div class="payMeth">
-          <p>
-            Your personal data will be used to process your order, support your experience throughout this website, and
-            for other purposes described in our <a href="./privacy-policy.html">privacy policy</a> .
-          </p>
-          <div class="label">
-            <input type="checkbox" id="a1">
-            <label for="a1">
-              I have read and agree to the website <a href="./terms-conditions.html">terms and conditions</a>
-            </label>
-          </div>
-          <a href="./pay.html" class="toPay">Complete Order</a>
-          <!-- <button type="submit"  class="toPay">Complete Order</button> -->
-        </div>
-      </div>
-    </form>
+    </div>
   </div>
-
 
   <!-- start footer -->
   <footer>
@@ -335,7 +354,9 @@
   </footer>
   <!-- end footer -->
   <script src="../js/main.js"></script>
+  <script src="../js/pagination.js"></script>
   <script src="../js/search.js"></script>
+  <script src="../js/filter.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
