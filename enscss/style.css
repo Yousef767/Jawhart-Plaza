@@ -358,7 +358,13 @@ nav {
   font-size: 1.2rem;
 }
 
-@media (max-width: 901px) {
+@media (max-width: 1000px) {
+  .search {
+    margin-left: 5%;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-bottom: 10px;
+  }
   .menu {
     display: flex;
   }
@@ -414,7 +420,8 @@ nav {
     left: 5%;
   }
   .mLinks {
-    gap: 20px;
+    flex-direction: row !important;
+    gap: 30px !important;
   }
   .mLinks .link {
     margin-left: 0;
@@ -4882,6 +4889,36 @@ header h1 {
   height: 100%;
 }
 
+.search {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  height: 80px;
+  position: relative;
+}
+.search button {
+  position: absolute;
+  left: 7px;
+  padding-top: 3px;
+}
+.search button i {
+  font-size: 1.2em;
+  color: #3D4541;
+}
+.search input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  height: 30px;
+  border-radius: 25px;
+  padding: 0 15px 0 30px;
+  font-size: 0.9em;
+  color: #9f7d51;
+  background-color: #fff;
+  width: 200px;
+  border: 1px solid #3D4541;
+}
+
 .s-n {
   position: fixed;
   top: -100px;
@@ -4900,27 +4937,6 @@ header h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.s-n .box .search {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-.s-n .box .search button i {
-  font-size: 1.5em;
-  color: #fff;
-}
-.s-n .box .search input {
-  border: none;
-  outline: none;
-  background-color: transparent;
-  height: 40px;
-  border-radius: 10px;
-  padding: 0 15px;
-  font-size: 1em;
-  color: #9f7d51;
-  background-color: #fff;
-  width: 600px;
 }
 .s-n #close2 {
   background-color: rgba(0, 0, 0, 0.4156862745);
