@@ -37,6 +37,7 @@ var swiper3 = new Swiper(".imagesSlider", {
   pagination: {
     el: ".swiper-pagination",
   },
+  
   breakpoints: {
     300: {
       slidesPerView: 1,
@@ -60,7 +61,7 @@ var swiper3 = new Swiper(".imagesSlider", {
       slidesPerView: 3,
     },
     1250: {
-      slidesPerView: 4,
+      slidesPerView: 3,
     },
   },
 });
@@ -227,11 +228,11 @@ var swiper3 = new Swiper("#productImages", {
   },
   loop: true,
   speed: 500,
-  pagination: {
+    pagination: {
     el: ".swiper-pagination",
     clickable: true,
     renderBullet: function (index, className) {
-      return `<div class="${className} custom-bullet">${index + 1}</div>`;
+      return `<img class="${className}" src="${this.slides[index].firstElementChild.src}"></img>`;
     },
   },
   navigation: {

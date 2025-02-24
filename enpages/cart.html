@@ -11,10 +11,6 @@
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
   <link rel="stylesheet" href="../js/swiper-bundle.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-  <!-- Leaflet JavaScript -->
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <link rel="stylesheet" href="../enscss/style.css">
   <title>Jawhart Plaza</title>
 </head>
@@ -123,175 +119,147 @@
   <!-- End Nav -->
 
 
-
-
-
-  <div class="home pageBanner pageBanner2 pageBanner4 pageBanner5">
-    <img class="pageBannerImage" src="../media/checkout.png" alt="">
+  <div class="home pageBanner pageBanner2 pageBanner4">
+    <img class="pageBannerImage" src="../media/wishlist.png" alt="">
+    <div class="box ktx z2">
+      <h1 class="trc"> my cart</h1>
+    </div>
   </div>
 
-  <div class="contactPage">
-    <form class="box contact max1000">
 
-      <div class="formcontrol bgtrans">
-        <h2> Billing details</h2>
-        <div class="form">
-          <div class="inputs">
-            <div class="input">
-              <span>Full Name:</span>
-              <input type="text" placeholder="Full Name">
-            </div>
-            <div class="input">
-              <span>Phone Number:</span>
-              <input type="tel" placeholder="Phone Number with  Code">
-            </div>
-          </div>
-          <div class="inputs">
-            <div class="input">
-              <span>Country:</span>
-              <div class="select">
-                <select>
-                  <option value="">Choose Country</option>
-                  <option value="jordan">Jordan</option>
-                  <option value="saudi_arabia">Saudi Arabia</option>
-                  <option value="uae">UAE</option>
-                  <option value="qatar">Qatar</option>
-                  <option value="kuwait">Kuwait</option>
-                  <option value="oman">Oman</option>
-                  <option value="bahrain">Bahrain</option>
-                  <option value="syria">Syria</option>
-                  <option value="lebanon">Lebanon</option>
-                  <option value="palestine">Palestine</option>
-                  <option value="yemen">Yemen</option>
-                  <option value="egypt">Egypt</option>
-                  <option value="morocco">Morocco</option>
-                  <option value="algeria">Algeria</option>
-                  <option value="tunisia">Tunisia</option>
-                  <option value="libya">Libya</option>
-                  <option value="sudan">Sudan</option>
-                  <option value="usa">USA</option>
-                  <option value="uk">UK</option>
-                  <option value="ue">EU</option>
-                  <option value="somalia">Somalia</option>
-                  <option value="mauritania">Mauritania</option>
-                  <option value="djibouti">Djibouti</option>
-                  <option value="comoros">Comoros</option>
-                  <option value="other">Other Country</option>
-                </select>
-                <i class="fa-regular fa-angle-down"></i>
-              </div>
-            </div>
-            <div class="input">
-              <span>City:</span>
-              <input type="text" placeholder="City">
-            </div>
-          </div>
-          <div class="input">
-            <span>Email:</span>
-            <input type="text" placeholder="Email">
-          </div>
-          <div class="input">
-            <span>Address:</span>
-            <input type="text" placeholder="Address">
-          </div>
-          <div class="input">
-            <span>Apartment, Suite, etc.:</span>
-            <input type="text" placeholder="Apartment, Suite, etc.">
-          </div>
-          <div class="label lbl">
-            <input type="checkbox" id="lbl1">
-            <label for="lbl1">
-              create an account ?
-            </label>
-          </div>
-          <div class="label lbl">
-            <input type="checkbox" id="lbl2">
-            <label for="lbl2">
-              Ship to a different address ?
-            </label>
-          </div>
-          <div class="input">
-            <span>Order notes (optional)</span>
-            <textarea placeholder="Order notes (optional)"></textarea>
-          </div>
+  <!-- Cart table -->
+  <div class="cartPage">
+    <div class="scrollTable">
+      <div class="box">
+        <table class="tg tg2" cellspacing="0" cellpadding="0">
+          <thead>
+            <th>Products</th>
+            <th>Quantitiy</th>
+            <th>Total</th>
+            <th></th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="prodTable">
+                  <img src="../media/DONE1OUT.png" alt="">
+                  <div class="prod">
+                    <div class="price">
+                      <span>40 JD</span>
+                      <del>60 JD</del>
+                    </div>
+                    <div class="nAndr">
+                      <h2>Product Name</h2>
+                    </div>
+                    <div class="nAndr">
+                      <h2>Size : <span>XXXL</span></h2>
+                    </div>
+                    <div class="nAndr">
+                      <h2>Color : <span class="color" style="background-color: black;"></span></h2>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="count">
+                  <button type="button">-</button>
+                  <input type="number">
+                  <button type="button">+</button>
+                </div>
+              </td>
+              <td><b>40 JD</b></td>
+              <td>
+                <i class="fa-thin fa-trash-can"></i>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="prodTable">
+                  <img src="../media/DONE1OUT.png" alt="">
+                  <div class="prod">
+                    <div class="price">
+                      <span>40 JD</span>
+                      <del>60 JD</del>
+                    </div>
+                    <div class="nAndr">
+                      <h2>Product Name Product Name Product Name</h2>
+                    </div>
+                    <div class="nAndr">
+                      <h2>Size : <span>XXXL</span></h2>
+                    </div>
+                    <div class="nAndr">
+                      <h2>Color : <span class="color" style="background-color: black;"></span></h2>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="count">
+                  <button type="button">-</button>
+                  <input type="number">
+                  <button type="button">+</button>
+                </div>
+              </td>
+              <td><b>40 JD</b></td>
+              <td>
+                <i class="fa-thin fa-trash-can"></i>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="prodTable">
+                  <img src="../media/DONE1OUT.png" alt="">
+                  <div class="prod">
+                    <div class="price">
+                      <span>40 JD</span>
+                      <del>60 JD</del>
+                    </div>
+                    <div class="nAndr">
+                      <h2>Product Name</h2>
+                    </div>
+                    <div class="nAndr">
+                      <h2>Size : <span>XXXL</span></h2>
+                    </div>
+                    <div class="nAndr">
+                      <h2>Color : <span class="color" style="background-color: black;"></span></h2>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="count">
+                  <button type="button">-</button>
+                  <input type="number">
+                  <button type="button">+</button>
+                </div>
+              </td>
+              <td><b>40 JD</b></td>
+              <td>
+                <i class="fa-thin fa-trash-can"></i>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="box">
+      <div class="clearandt">
+        <button>clear shopping cart <i class="fa-regular fa-x"></i></button>
+        <div class="totalp">
+          order total :
+          <span>120 JD</span>
         </div>
       </div>
-
-      <div class="dflexde">
-        <div class="cheCard">
-          <div class="cardc">
-            <h2>Order Summary</h2>
-            <div class="toItems">
-              <span>3 Items</span> - <span>300.00JD</span>
-            </div>
-            <div class="itemsData">
-              <div class="toItems">
-                <span>Product Name (*1)</span>  <span>100JD</span>
-              </div>
-              <div class="toItems">
-                <span>Product Name (*2)</span>  <span>200JD</span>
-              </div>
-            </div>
-            <div class="nubs">
-              <div class="nrow">
-                <span>Shipping</span>
-                <span>15.00JD</span>
-              </div>
-              <div class="nrow">
-                <span>Subtotal</span>
-                <span>300.00JD</span>
-              </div>
-              <div class="nrow">
-                <span>Taxes</span>
-                <span>0.13JD</span>
-              </div>
-            </div>
-            <div class="toItems">
-              <span>Total</span> - <span>315.13JD</span>
-            </div>
-            <div class="cop">
-              <div class="input applyInput">
-                <input type="text" placeholder="Gift Card or Discount Code...">
-                <button type="button" class="apply">Apply</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <h2>Payment method</h2>
-        <div class="payOptions">
-          <label for="o1">
-            <span>
-              <input type="radio" id="o1" name="g2" checked>
-              cash on delivery
-            </span>
-            <p>
-              Pay with cash upon delivery</p>
-          </label>
-          <label for="o2">
-            <span>
-              <input type="radio" id="o2" name="g2">
-              Online
-            </span>
-            <p>
-              Pay with visa or mastercard </p>
-          </label>
-        </div>
-        <div class="payMeth">
-          <p>
-            Your personal data will be used to process your order, support your experience throughout this website, and
-            for other purposes described in our <a href="./privacy-policy.html">privacy policy</a> .
-          </p>
-          <div class="label">
-            <input type="checkbox" id="a1">
-            <label for="a1">
-              I have read and agree to the website <a href="./terms-conditions.html">terms and conditions</a>
-            </label>
-          </div>
-          <a href="./pay.html" class="toPay">Complete Order</a>
-          <!-- <button type="submit"  class="toPay">Complete Order</button> -->
-        </div>
+    </div>
+    <div class="lastBtns">
+      <div class="box">
+        <form class="emailInput">
+          <input type="text" placeholder="Coupon Code">
+          <button type="submit">Apply Coupon</button>
+        </form>
+        <a href="./checkout.html" class="store">Proceed To Check </a>
       </div>
-    </form>
+    </div>
   </div>
 
 
@@ -350,7 +318,10 @@
   </footer>
   <!-- end footer -->
   <script src="../js/products.js"></script>
+  <script src="../js/counter.js"></script>
   <script src="../js/main.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <script src="../js/swiper.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();

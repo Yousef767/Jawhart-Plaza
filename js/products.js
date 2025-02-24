@@ -180,3 +180,9 @@ function RemoveFromCart(id) {
 }
 
 ShowItems();
+
+document.querySelectorAll('.colorradio input').forEach(input => {
+  const color = input.value;
+  const label = input.nextElementSibling;
+  label.style.backgroundColor = color;
+});
