@@ -367,7 +367,7 @@ nav {
   }
 }
 @media (max-width: 1000px) {
-  .search{
+  .search {
     margin-left: 5%;
     height: fit-content !important;
     padding-bottom: 10px;
@@ -1071,7 +1071,7 @@ footer {
   }
 }
 .w100 {
-  width: 100%;
+  width: 100% !important;
 }
 .pt50 {
   padding-top: 50px;
@@ -3938,7 +3938,6 @@ header {
     i {
       font-size: 1.2rem;
       color: #2a9703;
-      padding-top: 3px;
     }
     padding: 12px 30px;
     background-color: #fff;
@@ -3946,6 +3945,7 @@ header {
     color: #2a9703;
     border-radius: 7px;
     text-transform: capitalize;
+    font-size: 0.9rem;
   }
 }
 .message.errorMessage {
@@ -4697,7 +4697,7 @@ header {
     padding-top: 3px;
     i {
       font-size: 1.2em;
-      color: #3D4541;
+      color: #3d4541;
     }
   }
   input {
@@ -4705,11 +4705,11 @@ header {
     height: 30px;
     border-radius: 25px;
     padding: 0 15px 0 30px;
-    font-size: .9em;
+    font-size: 0.9em;
     color: $latte;
     background-color: #fff;
     width: 200px;
-    border:  1px solid #3D4541;
+    border: 1px solid #3d4541;
   }
 }
 .s-n {
@@ -4725,7 +4725,6 @@ header {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.251);
   .box {
     @include flex();
-  
   }
   #close2 {
     background-color: #0000006a;
@@ -4811,6 +4810,11 @@ header {
   height: 100%;
   z-index: 2;
   object-fit: cover;
+}
+.beforeShadow{
+  &::before{
+    background-color: rgba(0, 0, 0, 65%);
+  }
 }
 .aboutText,
 .aboutPageText {
@@ -5100,7 +5104,27 @@ header {
   width: 100%;
   display: flex;
   gap: 15px;
+  justify-content: space-between;
   flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  p{
+    color: #718279;
+    display: flex;
+    flex-grow: 1;
+  }
+  select{
+    @include noBorder();
+    border-radius: 10px;
+    padding: 0 40px;
+    height: 25px;
+    background-color: #fff;
+    color: $blackText;
+    border: 1px solid #718279;
+    option{
+      color: $blackText;
+    }
+  }
   .input {
     flex-shrink: 1;
     .select {
@@ -5119,6 +5143,17 @@ header {
       font-size: 1.4rem;
       display: none;
     }
+  }
+}
+.sortBy{
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 5px;
+  i{
+    position: absolute;
+    right: 10px;
+font-size: .9rem;
   }
 }
 .p70-0 {
@@ -5151,21 +5186,21 @@ header {
     @include flex();
     background-color: $latte;
   }
+  overflow: hidden;
 }
 .filter {
   width: 300px;
-  padding: 20px;
   background-color: #fff;
-  border: 1px solid $latte;
-  border-radius: 8px;
+  padding: 20px;
 }
 .filtSection {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   h3 {
-    color: #000;
+    color: $blackText;
+    font-weight: 600;
   }
 }
 .labelinput {
@@ -5174,13 +5209,100 @@ header {
   align-items: center;
   color: $latte;
   input {
-    width: 17px;
-    height: 17px;
-    accent-color: $latte;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px; /* Optional: for rounded corners */
+    appearance: none; /* Remove default checkbox */
+    border: 1px solid #5c6862;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 6px; /* Adjust thickness */
+      height: 12px; /* Adjust length */
+      border: solid #fff;
+      border-width: 0 2px 2px 0; /* This creates the checkmark */
+      transform: translate(-50%, -60%) rotate(45deg);
+      opacity: 0; /* Hidden by default */
+    }
+    &:checked {
+      background-color: $latte;
+      &::before {
+        opacity: 1; /* Show checkmark when checked */
+      }
+    }
   }
   label {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     cursor: pointer;
-    color: $latte;
+    color: #718279;
+    span {
+      color: #718279;
+    }
+  }
+}
+.radiosIn {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.labelinput.radio {
+  position: relative;
+  width: fit-content;
+  input {
+    width: 0;
+    height: 0;
+    display: none;
+    appearance: none;
+    position: absolute;
+    z-index: 1;
+    &:checked ~ label {
+      background-color: $latte;
+      color: #fff;
+    }
+  }
+  label {
+    padding: 0 20px;
+    background-color: #fff;
+    color: #718279;
+    border: 1px solid $latte;
+    transition: 0.3s all ease;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+}
+.labelinput.colorradio{
+  label {
+    padding: 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; 
+    border: 1px solid #5c6862;
+    outline: 2px solid transparent;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 3px #00000000);
+  }
+  input {
+    width: 0;
+    height: 0;
+    display: none;
+    appearance: none;
+    position: absolute;
+    z-index: 1;
+    &:checked ~ label {
+      background-color: initial;
+      color: #fff;
+      outline: 2px solid #5c6862;
+      filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.595));
+    }
   }
 }
 .fa-filter-list {
@@ -5239,13 +5361,9 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 50px;
   background-color: #fff;
-  border-radius: 10px;
-  padding-left: 20px;
   position: relative;
   direction: ltr;
-  border: 1px solid $latte;
 }
 @media (max-width: 601px) {
   .paginationCont {
@@ -5389,7 +5507,7 @@ input[type="range"]::-webkit-slider-thumb {
   font-weight: 500;
   direction: ltr;
   span {
-    color: $latte;
+    color: #718279;
   }
 }
 .pr {
@@ -6304,6 +6422,22 @@ input[type="range"]::-webkit-slider-thumb {
     }
     i {
       color: $latte;
+    }
+  }
+}
+.trc{
+  text-transform: capitalize;
+}
+.itemsData{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  .toItems{
+    display: flex;
+    justify-content: space-between;
+    span{
+      color: #718279;
+      font-weight: 400;
     }
   }
 }

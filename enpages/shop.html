@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../media/tap-icon.svg" type="image/x-icon" />
+  <link rel="shortcut icon" href="../media/tap-icon.svg" />
+  <link rel="apple-touch-icon" href="../media/tap-icon.svg" />
+  <meta name="color-scheme" content="light only">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+  <link rel="stylesheet" href="../js/swiper-bundle.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../enscss/style.css">
+  <title>Jawhart plaza</title>
+</head>
+
+<body>
+
+  <!-- Start Cart -->
+  <div class="cartInner">
+    <div class="cartBody">
+      <h2>Order Summary: <i class="fa-light fa-backward-fast"></i></h2>
+      <div class="itemsIncart">
+        <div class="itDcart">
+          <img src="../media/DONE1OUT.png" alt="">
+          <div class="itdd">
+            <h3>Product Name</h3>
+            <span>25JD</span>
+          </div>
+          <i class="fa-regular fa-trash-can"></i>
+        </div>
+        <div class="itDcart">
+          <img src="../media/DONE1OUT.png" alt="">
+          <div class="itdd">
+            <h3>Product Name</h3>
+            <span>25JD</span>
+          </div>
+          <i class="fa-regular fa-trash-can"></i>
+        </div>
+      </div>
+      <div class="total">
+        <span>Total:</span>
+        <span>50JD</span>
+      </div>
+      <div class="btns btns3">
+        <a href="./checkout.html">
+          Proceed to Payment
+        </a>
+        <a href="./cart.html">
+          View Cart
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- End Cart -->
+
+  <!-- Start Nav -->
+  <nav>
+    <div class="box f-s">
+      <a href="../index.html" class="logo">
+        <img src="../media/logo.png" alt="">
+      </a>
+      <div class="links">
+        <div class="ls">
+          <ul class="mainLinks">
+            <li><a class="link" href="../index.html">Home</a></li>
+            <li><a class="link" href="./hoodies.html"> Hoodies</a></li>
+            <li><a class="link" href="./men.html">Men</a></li>
+            <li><a class="link" href="./women.html"> Women</a></li>
+            <li><a class="link" href="./kids.html"> kids</a></li>
+            <li><a class="link active" href="./shop.html"> Shop</a></li>
+            <li>
+              <form class="search">
+                <input type="search" placeholder="Explore">
+                <button type="submit">
+                  <i class="fa-regular fa-magnifying-glass"></i></a>
+                </button>
+              </form>
+            </li>
+          </ul>
+          <div class="mLinks">
+            <a href="./whishlist.html"><img class="cw30img" src="../media/icons/heart.svg" alt=""> </a>
+            <button class="cart"><img class="cw30img" src="../media/icons/bag1.svg" alt=""> <span>0</span></button>
+            <a class="fw500" href="./login.html">
+              <img class="cw30img" src="../media/icons/user.svg" alt="">
+            </a>
+            <div class="drop"><a href="##">
+                <img class="lang" src="../media/icons/language.png" alt="">EN</a>
+              <span class="dropMenu">
+                <a href="../ar-index.html"><img class="lang" src="../media/icons/language.png" alt=""> AR </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="last">
+        <div class="mLinks">
+          <a href="./whishlist.html"><img class="cw30img" src="../media/icons/heart.svg" alt=""> </a>
+          <button class="cart"><img class="cw30img" src="../media/icons/bag1.svg" alt=""> <span>0</span></button>
+          <a class="fw500" href="./login.html">
+            <img class="cw30img" src="../media/icons/user.svg" alt="">
+          </a>
+          <div class="drop"><a href="##">
+              <img class="lang" src="../media/icons/language.png" alt="">EN</a>
+            <span class="dropMenu">
+              <a href="../ar-index.html"><img class="lang" src="../media/icons/language.png" alt=""> AR </a>
+            </span>
+          </div>
+        </div>
+        <button class="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!-- End Nav -->
+
+
+
+
+  <div class="home pageBanner pageBanner2 pageBanner4">
+    <img class="pageBannerImage" src="../media/shopPage.png" alt="">
+    <div class="box ktx z2">
+      <h1 class="trc">shop now ! because you deserve <span>the best</span> </h1>
+    </div>
+  </div>
+
+
+  <div class="bgfff p70-0">
+    <form class="box proandf pr">
+      <div class="filterInner">
+        <div class="filter">
+          <div class="filtSection">
+            <h3>Categories</h3>
+            <div class="labelinput">
+              <input type="checkbox" id="cat1">
+              <label for="cat1">Category name</label>
+            </div>
+            <div class="labelinput">
+              <input type="checkbox" id="cat2">
+              <label for="cat2">Category name</label>
+            </div>
+          </div>
+          <div class="filtSection">
+            <h3>Style </h3>
+            <div class="labelinput">
+              <input type="checkbox" id="s0">
+              <label for="s0">Hoodies <span>(12)</span></label>
+            </div>
+            <div class="labelinput">
+              <input type="checkbox" id="s1">
+              <label for="s1">Chef <span>(12)</span></label>
+            </div>
+          </div>
+          <div class="filtSection">
+            <h3>Size</h3>
+            <div class="radiosIn">
+              <div class="labelinput radio">
+                <input type="radio" id="si0" name="g1" value="S">
+                <label for="si0">S</label>
+              </div>
+              <div class="labelinput radio">
+                <input type="radio" id="si1" name="g1" value="M">
+                <label for="si1">M</label>
+              </div>
+              <div class="labelinput radio">
+                <input type="radio" id="si2" name="g1" value="L">
+                <label for="si2">L</label>
+              </div>
+              <div class="labelinput radio">
+                <input type="radio" id="si3" name="g1" value="XL">
+                <label for="si3">XL</label>
+              </div>
+              <div class="labelinput radio">
+                <input type="radio" id="si4" name="g1" value="XXL">
+                <label for="si4">XXL</label>
+              </div>
+              <div class="labelinput radio">
+                <input type="radio" id="si5" name="g1" value="XXXL">
+                <label for="si5">XXXL</label>
+              </div>
+            </div>
+          </div>
+          <div class="filtSection">
+            <h3>Color</h3>
+            <div class="radiosIn">
+              <div class="labelinput radio colorradio">
+                <input type="radio" id="white" name="color" value="#fff" >
+                <label for="white"></label>
+              </div>
+              <div class="labelinput radio colorradio">
+                <input type="radio" id="colorRed" name="color" value="red" >
+                <label for="colorRed"></label>
+              </div>
+              <div class="labelinput radio colorradio">
+                <input type="radio" id="colorBlue" name="color" value="blue" >
+                <label for="colorBlue"></label>
+              </div>
+              <div class="labelinput radio colorradio">
+                <input type="radio" id="colorGreen" name="color" value="green" >
+                <label for="colorGreen"></label>
+              </div>
+              <div class="labelinput radio colorradio">
+                <input type="radio" id="colorYellow" name="color" value="yellow" >
+                <label for="colorYellow"></label>
+              </div>
+              <div class="labelinput radio colorradio">
+                <input type="radio" id="colorBlack" name="color" value="black" >
+                <label for="colorBlack"></label>
+              </div>
+            </div>
+          </div>
+        
+          <div class="filtSection pb0">
+            <h3>Price Range:</h3>
+            <div class="pr">
+              <div class="r-container">
+                <div class="track"></div>
+                <div class="range" id="rangeTrack"></div>
+                <input type="range" id="rangeMin" min="0" max="5000" step="100" value="0" oninput="updateRange()">
+                <input type="range" id="rangeMax" min="0" max="5000" step="100" value="5000" oninput="updateRange()">
+              </div>
+            </div>
+            <div class="value-display">
+              <span id="rangeValue">10 JD - 5000 JD </span>
+            </div>
+          </div>
+        </div>
+        <button>Apply Filter</button>
+      </div>
+      <div class="projectsInner">
+        <div class="projectsSearch">
+          <button type="button" class="fa-solid fa-filter-list"></button>
+          <p>30 results of clothes</p>
+          <div class="sortBy">
+            <label for="sort">Sort by:</label>
+            <select id="sort">
+              <option value="0">Sort 0</option>
+              <option value="1">Sort 1</option>
+            </select>
+            <i class="fa-regular fa-angle-down"></i>
+          </div>
+
+        </div>
+        <div class="projects">
+          <div class="prod">
+            <div class="addToFav" tabindex="0">
+              <i class="fa-light fa-heart"></i>
+            </div>
+            <a href="./product.html" class="prodImage">
+              <img src="../media/DONE1OUT.png" alt="">
+            </a>
+            <div class="nAndr">
+              <h2>Product Name</h2>
+              <div class="rate">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-light fa-star"></i>
+                <span>(112)</span>
+              </div>
+            </div>
+            <div class="price">
+              <span>40 JD</span>
+              <del>60 JD</del>
+              <span>20 % OFF</span>
+            </div>
+            <div class="btns">
+              <button onclick="AddToCart(data[0])">
+                Add to Cart
+                <img src="../media/icons/bag.svg" alt="">
+              </button>
+            </div>
+          </div>
+          <div class="prod">
+            <div class="addToFav" tabindex="0">
+              <i class="fa-light fa-heart"></i>
+            </div>
+            <a href="./product.html" class="prodImage">
+              <img src="../media/DONE1OUT.png" alt="">
+            </a>
+            <div class="nAndr">
+              <h2>Product Name</h2>
+              <div class="rate">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-light fa-star"></i>
+                <span>(112)</span>
+              </div>
+            </div>
+            <div class="price">
+              <span>40 JD</span>
+              <del>60 JD</del>
+              <span>20 % OFF</span>
+            </div>
+            <div class="btns">
+              <button onclick="AddToCart(data[0])">
+                Add to Cart
+                <img src="../media/icons/bag.svg" alt="">
+              </button>
+            </div>
+          </div>
+          <div class="prod">
+            <div class="addToFav" tabindex="0">
+              <i class="fa-light fa-heart"></i>
+            </div>
+            <a href="./product.html" class="prodImage">
+              <img src="../media/DONE1OUT.png" alt="">
+            </a>
+            <div class="nAndr">
+              <h2>Product Name</h2>
+              <div class="rate">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-light fa-star"></i>
+                <span>(112)</span>
+              </div>
+            </div>
+            <div class="price">
+              <span>40 JD</span>
+              <del>60 JD</del>
+              <span>20 % OFF</span>
+            </div>
+            <div class="btns">
+              <button onclick="AddToCart(data[0])">
+                Add to Cart
+                <img src="../media/icons/bag.svg" alt="">
+              </button>
+            </div>
+          </div>
+          <div class="prod">
+            <div class="addToFav" tabindex="0">
+              <i class="fa-light fa-heart"></i>
+            </div>
+            <a href="./product.html" class="prodImage">
+              <img src="../media/DONE1OUT.png" alt="">
+            </a>
+            <div class="nAndr">
+              <h2>Product Name</h2>
+              <div class="rate">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-light fa-star"></i>
+                <span>(112)</span>
+              </div>
+            </div>
+            <div class="price">
+              <span>40 JD</span>
+              <del>60 JD</del>
+              <span>20 % OFF</span>
+            </div>
+            <div class="btns">
+              <button onclick="AddToCart(data[0])">
+                Add to Cart
+                <img src="../media/icons/bag.svg" alt="">
+              </button>
+            </div>
+          </div>
+          <div class="prod">
+            <div class="addToFav" tabindex="0">
+              <i class="fa-light fa-heart"></i>
+            </div>
+            <a href="./product.html" class="prodImage">
+              <img src="../media/DONE1OUT.png" alt="">
+            </a>
+            <div class="nAndr">
+              <h2>Product Name</h2>
+              <div class="rate">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-light fa-star"></i>
+                <span>(112)</span>
+              </div>
+            </div>
+            <div class="price">
+              <span>40 JD</span>
+              <del>60 JD</del>
+              <span>20 % OFF</span>
+            </div>
+            <div class="btns">
+              <button onclick="AddToCart(data[0])">
+                Add to Cart
+                <img src="../media/icons/bag.svg" alt="">
+              </button>
+            </div>
+          </div>
+          <div class="prod">
+            <div class="addToFav" tabindex="0">
+              <i class="fa-light fa-heart"></i>
+            </div>
+            <a href="./product.html" class="prodImage">
+              <img src="../media/DONE1OUT.png" alt="">
+            </a>
+            <div class="nAndr">
+              <h2>Product Name</h2>
+              <div class="rate">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-light fa-star"></i>
+                <span>(112)</span>
+              </div>
+            </div>
+            <div class="price">
+              <span>40 JD</span>
+              <del>60 JD</del>
+              <span>20 % OFF</span>
+            </div>
+            <div class="btns">
+              <button onclick="AddToCart(data[0])">
+                Add to Cart
+                <img src="../media/icons/bag.svg" alt="">
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="paginationCont">
+          <div class="paginations">
+            <ul class="spans">
+              <li><a href="##" class="page-link"><img src="../media/icons/arrow-prev.svg" alt=""></a></li>
+              <li><a href="##" class="page-link active">1</a></li>
+              <li><a href="##" class="page-link">2</a></li>
+              <li><a href="##" class="page-link">3</a></li>
+              <li><a href="##" class="page-link">...</a></li>
+              <li><a href="##" class="page-link">13</a></li>
+              <li><a href="##" class="page-link"><img src="../media/icons/arrow-next.svg" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- start footer -->
+  <footer>
+    <div class="box footer">
+      <div class="footerLogo">
+        <img src="../media/logo.png" alt="">
+        <div class="aboutText colorfff">
+          <p>
+            Duis ut ornare elit. Proin sit amet rutrum nibh. Morbi pulvinar est quis massaciaculis malesuada. Fusce in
+            aliquam erat. Suspendisse id mattis urnafashion. 
+          </p>
+        </div>
+        <div class="media">
+          <a href="##"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="##"><i class="fa-brands fa-instagram"></i></a>
+          <a href="##"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="##"><i class="fa-brands fa-snapchat"></i></a>
+        </div>
+      </div>
+      <div class="footerLinkGroup">
+        <div class="linkGroup">
+          <h2>helpful link</h2>
+          <ul>
+            <li><a href="../index.html"><img src="../media/icons/footerLink.svg" alt=""> Home </a></li>
+            <li><a href="./about.html"><img src="../media/icons/footerLink.svg" alt=""> About Us </a></li>
+            <li><a href="./shop.html"><img src="../media/icons/footerLink.svg" alt=""> shop</a></li>
+            <li><a href="./contact.html"><img src="../media/icons/footerLink.svg" alt=""> contact us </a></li>
+          </ul>
+        </div>
+        <div class="linkGroup">
+          <h2>Customer Area</h2>
+          <ul>
+            <li><a href="./faq.html"><img src="../media/icons/footerLink.svg" alt=""> FAQs </a></li>
+            <li><a href="./buying-guide.html"><img src="../media/icons/footerLink.svg" alt=""> Buying Guide </a>
+            </li>
+            <li><a href="./delivery-information.html"><img src="../media/icons/footerLink.svg" alt=""> Delivery
+                Information</a></li>
+            <li><a href="./track-my-order.html"><img src="../media/icons/footerLink.svg" alt=""> Track my order
+              </a></li>
+            <li><a href="./wholesale.html"><img src="../media/icons/footerLink.svg" alt=""> wholesale </a></li>
+          </ul>
+        </div>
+        <div class="linkGroup">
+          <h2>store policies</h2>
+          <ul>
+            <li><a href="./privacy-policy.html"><img src="../media/icons/footerLink.svg" alt=""> privacy & policy
+              </a></li>
+            <li><a href="./terms-conditions.html"><img src="../media/icons/footerLink.svg" alt=""> terms &
+                conditions </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- end footer -->
+  <script>
+    document.querySelectorAll('.colorradio input').forEach(input => {
+      const color = input.value;
+      const label = input.nextElementSibling;
+      label.style.backgroundColor = color;
+    });
+  </script>
+  <script src="../js/products.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/pagination.js"></script>
+  <script src="../js/filter.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
