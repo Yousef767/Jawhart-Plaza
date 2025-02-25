@@ -6918,6 +6918,7 @@ input[type=range]::-webkit-slider-thumb {
   display: flex;
   width: -moz-fit-content;
   width: fit-content;
+  direction: ltr;
   border: 1px solid #9f7d51;
   border-radius: 5px;
 }
@@ -7171,7 +7172,8 @@ input[type=checkbox]:checked::before {
   -moz-text-align-last: left;
        text-align-last: left;
 }
-.tg2 th, .tg2 td {
+.tg2 th,
+.tg2 td {
   border: none;
 }
 .tg2 tr td:nth-child(n) {
@@ -7259,4 +7261,226 @@ input[type=checkbox]:checked::before {
   font-weight: 600;
   color: #9f7d51;
   font-size: 1.3rem;
+}
+
+.trackOrder {
+  width: 100%;
+  padding: 130px 0 100px 0;
+}
+
+.trackData {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid #3d4541;
+  border-radius: 10px;
+}
+.trackData h2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  border-bottom: 1px solid #98afa2;
+  padding-bottom: 15px;
+  padding-top: 5px;
+}
+
+.h1b20 {
+  padding-bottom: 30px;
+  font-weight: 600;
+}
+@media (max-width: 600px) {
+  .h1b20 {
+    font-size: 1.5rem;
+  }
+}
+
+.orderDataRows {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.datar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.datar span:nth-child(1) {
+  color: #3d4541;
+  opacity: 0.6;
+  text-transform: capitalize;
+}
+
+.drivData {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  padding-bottom: 20px;
+}
+.drivData img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.drivData a {
+  position: absolute;
+  right: 10px;
+}
+.drivData a svg {
+  width: 40px;
+  height: 40px;
+}
+
+.textr span {
+  font-size: 0.8rem;
+  color: #3d4541;
+  opacity: 0.5;
+  text-transform: capitalize;
+}
+.textr h3 {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.trackBoxs {
+  display: flex;
+  gap: 30px;
+  align-items: stretch;
+}
+
+.mapandprogress {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: calc(100% - 380px);
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  border: 1px solid #3d4541;
+  z-index: 1 !important;
+}
+
+.order-status {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #3d4541;
+  background-color: #fff;
+}
+.order-status h2 {
+  font-weight: 600;
+}
+
+.delvDate {
+  text-transform: capitalize;
+  color: #718279;
+}
+.delvDate span {
+  color: #3d4541;
+}
+
+.progressBars {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  padding-top: 30px;
+}
+
+.pbar {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.pbar span {
+  position: relative;
+  width: 100%;
+  border-radius: 5px;
+  height: 5px;
+  background-color: #d9d9d9;
+  overflow: hidden;
+}
+.pbar span::after {
+  content: "";
+  position: absolute;
+  left: -100%;
+  width: 100%;
+  border-radius: 5px;
+  height: 5px;
+  background-color: #9f7d51;
+}
+
+.trackTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: capitalize;
+}
+.trackTitle img {
+  width: 20px;
+  height: 25px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.trackTitle .fa-spinner-third {
+  font-size: 1.3rem;
+  color: #9f7d51;
+  animation: spinner 1s linear forwards infinite;
+}
+
+@keyframes spinner {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.finished span::after {
+  left: 0;
+}
+
+.inprogress span::after {
+  left: -50%;
+}
+
+.pending span::after {
+  left: -100%;
+}
+
+@media (max-width: 1000px) {
+  .trackBoxs {
+    flex-direction: column;
+  }
+  .trackData {
+    width: 100%;
+  }
+  .mapandprogress {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .progressBars {
+    flex-wrap: wrap;
+  }
+  .pbar {
+    width: 200px;
+    flex-grow: 1;
+  }
+}
+.leaflet-routing-container {
+  display: none !important;
 }/*# sourceMappingURL=style.css.map */

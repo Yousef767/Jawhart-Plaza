@@ -5218,10 +5218,10 @@ header {
       position: absolute;
       left: 50%;
       top: 50%;
-      width: 6px; 
-      height: 12px; 
+      width: 6px;
+      height: 12px;
       border: solid #fff;
-      border-width: 0 2px 2px 0; 
+      border-width: 0 2px 2px 0;
       transform: translate(-50%, -60%) rotate(45deg);
       opacity: 0;
     }
@@ -6520,6 +6520,7 @@ input[type="range"]::-webkit-slider-thumb {
 .count {
   display: flex;
   width: fit-content;
+  direction: ltr;
   button,
   input {
     @include noBorder();
@@ -6677,8 +6678,8 @@ input[type="checkbox"] {
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 6px; 
-    height: 12px; 
+    width: 6px;
+    height: 12px;
     border: solid #fff;
     border-width: 0 2px 2px 0;
     transform: translate(-50%, -60%) rotate(45deg);
@@ -6699,7 +6700,7 @@ input[type="checkbox"] {
     width: 100%;
   }
 }
-.prodTable{
+.prodTable {
   height: auto;
   display: flex;
   align-items: center;
@@ -6707,12 +6708,12 @@ input[type="checkbox"] {
   max-width: 400px;
   min-width: 400px;
   position: relative;
-  h2{
+  h2 {
     white-space: wrap;
     text-align: left;
   }
-  &::after{
-    content: '';
+  &::after {
+    content: "";
     position: absolute;
     width: 100%;
     bottom: -20px;
@@ -6720,95 +6721,96 @@ input[type="checkbox"] {
     left: -70%;
     background-color: #fff;
   }
-  img{
+  img {
     height: 150px;
     object-fit: contain;
   }
-  .prod{
-    .nAndr{
+  .prod {
+    .nAndr {
       padding: 0;
-      span{
+      span {
         color: $latte;
       }
     }
   }
 }
-.cartPage{
+.cartPage {
   width: 100%;
   padding: 70px 0;
 }
-.tg2{
+.tg2 {
   width: 100%;
   border: none;
-  thead{
-    th{
+  thead {
+    th {
       font-size: 1.1rem;
-      &:nth-child(1){
+      &:nth-child(1) {
         text-align-last: left;
       }
     }
   }
-  th,td{
+  th,
+  td {
     border: none;
   }
-  tr{
-    td{
-      &:nth-child(n){
-        border-bottom: 1px solid rgba(0, 0, 0,38%);
+  tr {
+    td {
+      &:nth-child(n) {
+        border-bottom: 1px solid rgba(0, 0, 0, 38%);
       }
     }
   }
-  i{
+  i {
     font-size: 1.2rem;
     color: $latte;
     cursor: pointer;
   }
-  b{
+  b {
     color: $latte;
     font-size: 1.3rem;
   }
-  .count{
+  .count {
     margin: 0 auto;
   }
-  .nAndr{
-    h2{
+  .nAndr {
+    h2 {
       display: flex;
       align-items: center;
       gap: 10px;
     }
-    .color{
+    .color {
       display: inline-flex;
       @include circle(20px);
       background-color: red;
     }
   }
 }
-.lastBtns{
+.lastBtns {
   width: 100%;
   padding-top: 30px;
-  .box{
+  .box {
     display: flex;
     justify-content: space-between;
     gap: 30px;
     flex-wrap: wrap;
   }
-  .emailInput{
-    input{
+  .emailInput {
+    input {
       border-radius: 25px;
       border: 1px solid $latte;
     }
-    button{
+    button {
       border-radius: 25px;
       padding: 0 20px;
       white-space: nowrap;
-      @media (max-width:600px) {
+      @media (max-width: 600px) {
         padding: 0 10px;
-        font-size: .8rem;
+        font-size: 0.8rem;
       }
     }
   }
 }
-.clearandt{
+.clearandt {
   padding: 20px 0 10px 0;
   width: 100%;
   display: flex;
@@ -6816,15 +6818,16 @@ input[type="checkbox"] {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  button{
-    display: flex;gap: 10px;
+  button {
+    display: flex;
+    gap: 10px;
     color: #718279;
     align-items: center;
-    font-size: .9rem;
+    font-size: 0.9rem;
     text-transform: capitalize;
   }
 }
-.totalp{
+.totalp {
   display: flex;
   gap: 10px;
   align-items: center;
@@ -6832,9 +6835,226 @@ input[type="checkbox"] {
   font-weight: 500;
   color: #718279;
   text-transform: capitalize;
-  span{
+  span {
     font-weight: 600;
     color: $latte;
     font-size: 1.3rem;
   }
+}
+.trackOrder {
+  width: 100%;
+  padding: 130px 0 100px 0;
+}
+.trackData {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid #3d4541;
+  border-radius: 10px;
+  h2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    border-bottom: 1px solid #98afa2;
+    padding-bottom: 15px;
+    padding-top: 5px;
+  }
+}
+.h1b20 {
+  padding-bottom: 30px;
+  font-weight: 600;
+  @media (max-width: 600px) {
+    font-size: 1.5rem;
+  }
+}
+.orderDataRows {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.datar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  span {
+    &:nth-child(1) {
+      color: #3d4541;
+      opacity: 0.6;
+      text-transform: capitalize;
+    }
+  }
+}
+.drivData {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  img {
+    @include circle(50px);
+    object-fit: cover;
+  }
+  padding-bottom: 20px;
+  a {
+    position: absolute;
+    right: 10px;
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+.textr {
+  span {
+    font-size: 0.8rem;
+    color: #3d4541;
+    opacity: 0.5;
+    text-transform: capitalize;
+  }
+  h3 {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+}
+.trackBoxs {
+  display: flex;
+  gap: 30px;
+  align-items: stretch;
+}
+.mapandprogress {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: calc(100% - 380px);
+}
+#map {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  border: 1px solid #3d4541;
+  z-index: 1 !important;
+}
+.order-status {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #3d4541;
+  background-color: #fff;
+  h2 {
+    font-weight: 600;
+  }
+}
+.delvDate {
+  text-transform: capitalize;
+  color: #718279;
+
+  span {
+    color: $blackText;
+  }
+}
+.progressBars {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  padding-top: 30px;
+}
+.pbar {
+  width: calc(100% / 4);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  span {
+    position: relative;
+    width: 100%;
+    border-radius: 5px;
+    height: 5px;
+    background-color: #d9d9d9;
+    overflow: hidden;
+    &::after {
+      content: "";
+      position: absolute;
+      left: -100%;
+      width: 100%;
+      border-radius: 5px;
+      height: 5px;
+      background-color: $latte;
+    }
+  }
+}
+.trackTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  img {
+    width: 20px;
+    height: 25px;
+    object-fit: contain;
+  }
+  text-transform: capitalize;
+  .fa-spinner-third {
+    font-size: 1.3rem;
+    color: $latte;
+    animation: spinner 1s linear forwards infinite;
+  }
+}
+@keyframes spinner {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.finished {
+  span {
+    &::after {
+      left: 0;
+    }
+  }
+}
+.inprogress {
+  span {
+    &::after {
+      left: -50%;
+    }
+  }
+}
+.pending {
+  span {
+    &::after {
+      left: -100%;
+    }
+  }
+}
+
+@media (max-width:1000px) {
+  .trackBoxs{
+    flex-direction: column;
+  }
+  .trackData{
+    width: 100%;
+  }
+  .mapandprogress{
+    width: 100%;
+  }
+}
+
+@media (max-width:700px) {
+  .progressBars{
+    flex-wrap: wrap;
+  }
+  .pbar{
+    width: 200px;
+    flex-grow: 1;
+  }
+}
+.leaflet-routing-container {
+  display: none !important;
 }

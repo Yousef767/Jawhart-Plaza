@@ -10,7 +10,10 @@
   <meta name="color-scheme" content="light only">
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
   <link rel="stylesheet" href="../js/swiper-bundle.min.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+  <!-- Leaflet Routing CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css">
   <link rel="stylesheet" href="../enscss/style.css">
   <title>Jawhart Plaza</title>
 </head>
@@ -118,179 +121,104 @@
   </nav>
   <!-- End Nav -->
 
-
-
-
-
-  <div class="home pageBanner pageBanner2 pageBanner4 pageBanner5">
-    <img class="pageBannerImage" src="../media/checkout.png" alt="">
-  </div>
-
-  <div class="contactPage">
-    <form class="box contact max1000">
-
-      <div class="formcontrol bgtrans">
-        <h2> Billing details</h2>
-        <div class="form">
-          <div class="inputs">
-            <div class="input">
-              <span>Full Name:</span>
-              <input type="text" placeholder="Full Name">
-            </div>
-            <div class="input">
-              <span>Phone Number:</span>
-              <input type="tel" placeholder="Phone Number with  Code">
-            </div>
+  <div class="trackOrder">
+    <div class="box">
+      <h1 class="trc h1b20">tracking my order</h1>
+    </div>
+    <div class="box trackBoxs">
+      <div class="trackData">
+        <h2>order details <i class="fa-regular fa-angle-down"></i></h2>
+        <div class="orderDataRows">
+          <div class="datar">
+            <span>order iD</span>
+            <span># 1234567</span>
           </div>
-          <div class="inputs">
-            <div class="input">
-              <span>Country:</span>
-              <div class="select">
-                <select>
-                  <option value="">Choose Country</option>
-                  <option value="jordan">Jordan</option>
-                  <option value="saudi_arabia">Saudi Arabia</option>
-                  <option value="uae">UAE</option>
-                  <option value="qatar">Qatar</option>
-                  <option value="kuwait">Kuwait</option>
-                  <option value="oman">Oman</option>
-                  <option value="bahrain">Bahrain</option>
-                  <option value="syria">Syria</option>
-                  <option value="lebanon">Lebanon</option>
-                  <option value="palestine">Palestine</option>
-                  <option value="yemen">Yemen</option>
-                  <option value="egypt">Egypt</option>
-                  <option value="morocco">Morocco</option>
-                  <option value="algeria">Algeria</option>
-                  <option value="tunisia">Tunisia</option>
-                  <option value="libya">Libya</option>
-                  <option value="sudan">Sudan</option>
-                  <option value="usa">USA</option>
-                  <option value="uk">UK</option>
-                  <option value="ue">EU</option>
-                  <option value="somalia">Somalia</option>
-                  <option value="mauritania">Mauritania</option>
-                  <option value="djibouti">Djibouti</option>
-                  <option value="comoros">Comoros</option>
-                  <option value="other">Other Country</option>
-                </select>
-                <i class="fa-regular fa-angle-down"></i>
+          <div class="datar">
+            <span>items order</span>
+            <span>3 items</span>
+          </div>
+          <div class="datar">
+            <span>order total</span>
+            <span>185 JD</span>
+          </div>
+        </div>
+        <h2>delivery details <i class="fa-regular fa-angle-down"></i></h2>
+        <div class="orderDataRows">
+          <div class="datar">
+            <span>payment method</span>
+            <span>cash on delivery</span>
+          </div>
+          <div class="datar">
+            <span>delivery partner name</span>
+            <span>partner name</span>
+          </div>
+          <div class="datar">
+            <span>vechicle type</span>
+            <span>vechicle type name</span>
+          </div>
+          <div class="datar">
+            <span>vechicle plate number</span>
+            <span>plate num</span>
+          </div>
+
+        </div>
+        <div class="drivData">
+          <img src="../media/home.png" alt="">
+          <div class="textr">
+            <span>delivery partner </span>
+            <h3>partner name</h3>
+          </div>
+          <a href="tel:+962100100100" target="_blank"><svg width="44" height="42" viewBox="0 0 44 42" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M37.554 6.14851C28.9612 -2.05124 15.0315 -2.04927 6.4413 6.15302C-2.14892 14.3553 -2.14686 27.6517 6.44603 35.8515C15.0389 44.0512 28.9685 44.0493 37.5587 35.847C41.6842 31.9078 44.0013 26.5655 44 20.9955C43.9988 15.4264 41.6801 10.0858 37.554 6.14851ZM33.3182 29.2527L33.3153 29.2555V29.2486L32.2006 30.3055C30.759 31.699 28.6595 32.2723 26.6639 31.8175C24.6534 31.3038 22.7422 30.4862 21.0026 29.3956C19.3865 28.4096 17.8888 27.2571 16.5366 25.9585C15.2925 24.7797 14.1748 23.4852 13.1999 22.0945C12.1336 20.5981 11.2896 18.968 10.6919 17.2505C10.0068 15.2329 10.5745 13.0189 12.1586 11.5316L13.4639 10.2856C13.8269 9.93761 14.4166 9.93638 14.781 10.2828L14.7839 10.2856L18.9052 14.2196C19.2698 14.566 19.2711 15.1289 18.9082 15.4768L18.9052 15.4796L16.4852 17.7895C15.7909 18.4451 15.7036 19.4869 16.2799 20.2396C17.1552 21.3862 18.1238 22.4652 19.1766 23.4666C20.3504 24.5919 21.6265 25.6156 22.9899 26.5256C23.7777 27.0501 24.8457 26.9617 25.5272 26.3156L27.8665 24.0476C28.2295 23.6996 28.8192 23.6984 29.1836 24.0448L29.1865 24.0476L33.3152 27.9956C33.6799 28.342 33.6811 28.9048 33.3182 29.2527Z"
+                fill="#9E7C51" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="mapandprogress">
+        <div id="map"></div>
+        <div class="order-status">
+          <h2>Order Status</h2>
+          <div class="delvDate">
+            estimated delivery date : <span>monday , 20 may 2025</span>
+          </div>
+          <!-- Status  finished,inprogress,pending as classes and set image as shown below-->
+          <div class="progressBars">
+            <div class="pbar finished">
+              <span></span>
+              <div class="trackTitle">
+                <img src="../media/icons/check.svg" alt="">
+                ordered
               </div>
             </div>
-            <div class="input">
-              <span>City:</span>
-              <input type="text" placeholder="City">
+            <div class="pbar finished">
+              <span></span>
+              <div class="trackTitle">
+                <img src="../media/icons/check.svg" alt="">
+                shipped
+              </div>
             </div>
-          </div>
-          <div class="input">
-            <span>Email:</span>
-            <input type="text" placeholder="Email">
-          </div>
-          <div class="input">
-            <span>Address:</span>
-            <input type="text" placeholder="Address">
-          </div>
-          <div class="input">
-            <span>Apartment, Suite, etc.:</span>
-            <input type="text" placeholder="Apartment, Suite, etc.">
-          </div>
-          <div class="label lbl">
-            <input type="checkbox" id="lbl1">
-            <label for="lbl1">
-              create an account ?
-            </label>
-          </div>
-          <div class="label lbl">
-            <input type="checkbox" id="lbl2">
-            <label for="lbl2">
-              Ship to a different address ?
-            </label>
-          </div>
-          <div class="input">
-            <span>Order notes (optional)</span>
-            <textarea placeholder="Order notes (optional)"></textarea>
+            <div class="pbar inprogress">
+              <span></span>
+              <div class="trackTitle">
+                <i class="fa-duotone fa-spinner-third"></i>
+                in transit
+              </div>
+            </div>
+            <div class="pbar pending">
+              <span></span>
+              <div class="trackTitle">
+                <img src="../media/icons/not.svg" alt="">
+                delivered
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="dflexde">
-        <div class="cheCard">
-          <div class="cardc">
-            <h2>Order Summary</h2>
-            <div class="toItems">
-              <span>3 Items</span> - <span>300.00JD</span>
-            </div>
-            <div class="itemsData">
-              <div class="toItems">
-                <span>Product Name (*1)</span>  <span>100JD</span>
-              </div>
-              <div class="toItems">
-                <span>Product Name (*2)</span>  <span>200JD</span>
-              </div>
-            </div>
-            <div class="nubs">
-              <div class="nrow">
-                <span>Shipping</span>
-                <span>15.00JD</span>
-              </div>
-              <div class="nrow">
-                <span>Subtotal</span>
-                <span>300.00JD</span>
-              </div>
-              <div class="nrow">
-                <span>Taxes</span>
-                <span>0.13JD</span>
-              </div>
-            </div>
-            <div class="toItems">
-              <span>Total</span> - <span>315.13JD</span>
-            </div>
-            <div class="cop">
-              <div class="input applyInput">
-                <input type="text" placeholder="Gift Card or Discount Code...">
-                <button type="button" class="apply">Apply</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <h2>Payment method</h2>
-        <div class="payOptions">
-          <label for="o1">
-            <span>
-              <input type="radio" id="o1" name="g2" checked>
-              cash on delivery
-            </span>
-            <p>
-              Pay with cash upon delivery</p>
-          </label>
-          <label for="o2">
-            <span>
-              <input type="radio" id="o2" name="g2">
-              Online
-            </span>
-            <p>
-              Pay with visa or mastercard </p>
-          </label>
-        </div>
-        <div class="payMeth">
-          <p>
-            Your personal data will be used to process your order, support your experience throughout this website, and
-            for other purposes described in our <a href="./privacy-policy.html">privacy policy</a> .
-          </p>
-          <div class="label">
-            <input type="checkbox" id="a1">
-            <label for="a1">
-              I have read and agree to the website <a href="./terms-conditions.html">terms and conditions</a>
-            </label>
-          </div>
-          <a href="./pay.html" class="toPay">Complete Order</a>
-          <!-- <button type="submit"  class="toPay">Complete Order</button> -->
-        </div>
-      </div>
-    </form>
+    </div>
   </div>
-
-
   <!-- start footer -->
   <footer>
     <div class="box footer">
@@ -345,8 +273,60 @@
     </div>
   </footer>
   <!-- end footer -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+  <script>
+    const from = [30.0444, 31.2357]; // Cairo, Egypt
+    const to = [29.9784, 31.1325]; // Giza, Egypt
+
+    var map = L.map("map").setView([from[0], from[1]], 12);
+
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution: "",
+    }).addTo(map);
+
+    var redPinIcon = L.icon({
+      iconUrl: '../media/icons/marker.webp',
+      iconSize: [25, 41],
+      iconAnchor: [12, 41],
+      popupAnchor: [1, -34]
+    });
+
+    var locations = [from, to];
+
+    locations.forEach((loc, index) => {
+      L.marker(loc, { icon: redPinIcon }).addTo(map);
+    });
+
+    var borderLine = L.Routing.control({
+      waypoints: locations.map((loc) => L.latLng(loc)),
+      routeWhileDragging: false,
+      addWaypoints: false,
+      draggableWaypoints: false,
+      createMarker: () => null,
+      show: false,
+      lineOptions: {
+        styles: [{ color: '#0b12d9', opacity: 1, weight: 8 }]
+      }
+    }).addTo(map);
+
+    var mainLine = L.Routing.control({
+      waypoints: locations.map((loc) => L.latLng(loc)),
+      routeWhileDragging: false,
+      addWaypoints: false,
+      draggableWaypoints: false,
+      createMarker: () => null,
+      show: false,
+      lineOptions: {
+        styles: [{ color: '#0f53ff', opacity: 1, weight: 5 }]
+      }
+    }).addTo(map);
+  </script>
+  <script src="../js/map.js"></script>
   <script src="../js/products.js"></script>
   <script src="../js/main.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <script src="../js/swiper.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
