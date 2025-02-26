@@ -20,6 +20,18 @@ var swiper = new Swiper(".coSlider", {
     },
   },
 });
+var swiper = new Swiper(".homeSlider", {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable:true
+  },
+});
 
 
 

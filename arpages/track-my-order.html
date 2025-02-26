@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../media/tap-icon.svg" type="image/x-icon" />
+  <link rel="shortcut icon" href="../media/tap-icon.svg" />
+  <link rel="apple-touch-icon" href="../media/tap-icon.svg" />
+  <meta name="color-scheme" content="light only">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+  <link rel="stylesheet" href="../js/swiper-bundle.min.css">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+  <!-- Leaflet Routing CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css">
+  <link rel="stylesheet" href="../arscss/style.css">
+  <title>Jawhart Plaza</title>
+</head>
+
+<body>
+
+  <!-- Start Cart -->
+  <div class="cartInner">
+    <div class="cartBody">
+      <h2>ملخص الطلب: <i class="fa-light fa-backward-fast"></i></h2>
+      <div class="itemsIncart">
+        <div class="itDcart">
+          <img src="../media/DONE1OUT.png" alt="">
+          <div class="itdd">
+            <h3>اسم المنتج</h3>
+            <span>25JD</span>
+          </div>
+          <i class="fa-regular fa-trash-can"></i>
+        </div>
+        <div class="itDcart">
+          <img src="../media/DONE1OUT.png" alt="">
+          <div class="itdd">
+            <h3>اسم المنتج</h3>
+            <span>25JD</span>
+          </div>
+          <i class="fa-regular fa-trash-can"></i>
+        </div>
+      </div>
+      <div class="total">
+        <span>المجموع:</span>
+        <span>50JD</span>
+      </div>
+      <div class="btns btns3">
+        <a href="./checkout.html">
+          المتابعة للدفع
+        </a>
+        <a href="./cart.html">
+          عرض سلة الشراء
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- End Cart -->
+
+  <!-- Start Nav -->
+  <nav>
+    <div class="box f-s">
+      <a href="../ar-index.html" class="logo">
+        <img src="../media/logo.png" alt="">
+      </a>
+      <div class="links">
+        <div class="ls">
+          <ul class="mainLinks">
+            <li><a class="link " href="../ar-index.html">الرئيسية</a></li>
+            <li><a class="link" href="./hoodies.html"> هودي</a></li>
+            <li><a class="link" href="./men.html">رجال</a></li>
+            <li><a class="link" href="./women.html">نساء</a></li>
+            <li><a class="link" href="./kids.html"> اطفال</a></li>
+            <li><a class="link" href="./shop.html"> المتجر</a></li>
+            <li>
+              <form class="search">
+                <input type="search" placeholder="إكتشف">
+                <button type="submit">
+                  <i class="fa-regular fa-magnifying-glass"></i></a>
+                </button>
+              </form>
+            </li>
+          </ul>
+          <div class="mLinks">
+            <a href="./whishlist.html"><img class="cw30img" src="../media/icons/heart.svg" alt=""> </a>
+            <button class="cart"><img class="cw30img" src="../media/icons/bag1.svg" alt=""> <span>0</span></button>
+            <a class="fw500" href="./login.html">
+              <img class="cw30img" src="../media/icons/user.svg" alt="">
+            </a>
+            <div class="drop"><a href="##">
+                <img class="lang" src="../media/icons/language.png" alt="">AR</a>
+              <span class="dropMenu">
+                <a href="../index.html"><img class="lang" src="./media/icons/language.png" alt=""> EN </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="last">
+        <div class="mLinks">
+          <a href="./whishlist.html"><img class="cw30img" src="../media/icons/heart.svg" alt=""> </a>
+          <button class="cart"><img class="cw30img" src="../media/icons/bag1.svg" alt=""> <span>0</span></button>
+          <a class="fw500" href="./login.html">
+            <img class="cw30img" src="../media/icons/user.svg" alt="">
+          </a>
+          <div class="drop"><a href="##">
+              <img class="lang" src="../media/icons/language.png" alt="">AR</a>
+            <span class="dropMenu">
+              <a href="../index.html"><img class="lang" src="./media/icons/language.png" alt=""> EN </a>
+            </span>
+          </div>
+        </div>
+        <button class="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+    </div>
+    </div>
+  </nav>
+  <!-- End Nav -->
+  <div class="trackOrder">
+    <div class="box">
+      <h1 class="trc h1b20">تتبع طلبي</h1>
+    </div>
+    <div class="box trackBoxs">
+      <div class="trackData">
+        <h2>تفاصيل الطلب <i class="fa-regular fa-angle-down"></i></h2>
+        <div class="orderDataRows">
+          <div class="datar">
+            <span>رقم الطلب</span>
+            <span># 1234567</span>
+          </div>
+          <div class="datar">
+            <span>المنتجات المطلوبة</span>
+            <span>3 عناصر</span>
+          </div>
+          <div class="datar">
+            <span>إجمالي الطلب</span>
+            <span>185 دينار</span>
+          </div>
+        </div>
+        <h2>تفاصيل التوصيل <i class="fa-regular fa-angle-down"></i></h2>
+        <div class="orderDataRows">
+          <div class="datar">
+            <span>طريقة الدفع</span>
+            <span>الدفع عند الاستلام</span>
+          </div>
+          <div class="datar">
+            <span>اسم شريك التوصيل</span>
+            <span>اسم الشريك</span>
+          </div>
+          <div class="datar">
+            <span>نوع المركبة</span>
+            <span>نوع المركبة</span>
+          </div>
+          <div class="datar">
+            <span>رقم لوحة المركبة</span>
+            <span>رقم اللوحة</span>
+          </div>
+        </div>
+        <div class="drivData">
+          <img src="../media/home.png" alt="">
+          <div class="textr">
+            <span>شريك التوصيل</span>
+            <h3>اسم الشريك</h3>
+          </div>
+          <a href="tel:+962100100100" target="_blank"><svg width="44" height="42" viewBox="0 0 44 42" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M37.554 6.14851C28.9612 -2.05124 15.0315 -2.04927 6.4413 6.15302C-2.14892 14.3553 -2.14686 27.6517 6.44603 35.8515C15.0389 44.0512 28.9685 44.0493 37.5587 35.847C41.6842 31.9078 44.0013 26.5655 44 20.9955C43.9988 15.4264 41.6801 10.0858 37.554 6.14851ZM33.3182 29.2527L33.3153 29.2555V29.2486L32.2006 30.3055C30.759 31.699 28.6595 32.2723 26.6639 31.8175C24.6534 31.3038 22.7422 30.4862 21.0026 29.3956C19.3865 28.4096 17.8888 27.2571 16.5366 25.9585C15.2925 24.7797 14.1748 23.4852 13.1999 22.0945C12.1336 20.5981 11.2896 18.968 10.6919 17.2505C10.0068 15.2329 10.5745 13.0189 12.1586 11.5316L13.4639 10.2856C13.8269 9.93761 14.4166 9.93638 14.781 10.2828L14.7839 10.2856L18.9052 14.2196C19.2698 14.566 19.2711 15.1289 18.9082 15.4768L18.9052 15.4796L16.4852 17.7895C15.7909 18.4451 15.7036 19.4869 16.2799 20.2396C17.1552 21.3862 18.1238 22.4652 19.1766 23.4666C20.3504 24.5919 21.6265 25.6156 22.9899 26.5256C23.7777 27.0501 24.8457 26.9617 25.5272 26.3156L27.8665 24.0476C28.2295 23.6996 28.8192 23.6984 29.1836 24.0448L29.1865 24.0476L33.3152 27.9956C33.6799 28.342 33.6811 28.9048 33.3182 29.2527Z"
+                fill="#9E7C51" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="mapandprogress">
+        <div id="map"></div>
+        <div class="order-status">
+          <h2>حالة الطلب</h2>
+          <div class="delvDate">
+            تاريخ التوصيل المتوقع : <span>الاثنين ، 20 مايو 2025</span>
+          </div>
+          <!-- Status  finished,inprogress,pending as classes and set image as shown below-->
+          <div class="progressBars">
+            <div class="pbar finished">
+              <span></span>
+              <div class="trackTitle">
+                <img src="../media/icons/check.svg" alt="">
+                تم الطلب
+              </div>
+            </div>
+            <div class="pbar finished">
+              <span></span>
+              <div class="trackTitle">
+                <img src="../media/icons/check.svg" alt="">
+                تم الشحن
+              </div>
+            </div>
+            <div class="pbar inprogress">
+              <span></span>
+              <div class="trackTitle">
+                <i class="fa-duotone fa-spinner-third"></i>
+                قيد التوصيل
+              </div>
+            </div>
+            <div class="pbar pending">
+              <span></span>
+              <div class="trackTitle">
+                <img src="../media/icons/not.svg" alt="">
+                تم التوصيل
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- start footer -->
+  <footer>
+    <div class="box footer">
+      <div class="footerLogo">
+        <img src="../media/logo.png" alt="">
+        <div class="aboutText colorfff">
+          <p>
+            Duis ut ornare elit. Proin sit amet rutrum nibh. Morbi pulvinar est quis massaciaculis malesuada. Fusce in
+            aliquam erat. Suspendisse id mattis urnafashion.
+          </p>
+        </div>
+        <div class="media">
+          <a href="##"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="##"><i class="fa-brands fa-instagram"></i></a>
+          <a href="##"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="##"><i class="fa-brands fa-snapchat"></i></a>
+        </div>
+      </div>
+      <div class="footerLinkGroup">
+        <div class="linkGroup">
+          <h2>روابط مفيدة</h2>
+          <ul>
+            <li><a href="../ar-index.html"><img src="../media/icons/footerLink.svg" alt=""> الرئيسية </a></li>
+            <li><a href="./about.html"><img src="../media/icons/footerLink.svg" alt=""> من نحن </a></li>
+            <li><a href="./shop.html"><img src="../media/icons/footerLink.svg" alt=""> المتجر</a></li>
+            <li><a href="./contact.html"><img src="../media/icons/footerLink.svg" alt=""> تواصل معنا </a></li>
+          </ul>
+        </div>
+        <div class="linkGroup">
+          <h2>مساحة العميل</h2>
+          <ul>
+            <li><a href="./faq.html"><img src="../media/icons/footerLink.svg" alt=""> اسئلة شائعة </a></li>
+            <li><a href="./buying-guide.html"><img src="../media/icons/footerLink.svg" alt=""> دليل الشراء </a>
+            </li>
+            <li><a href="./delivery-information.html"><img src="../media/icons/footerLink.svg" alt=""> معلومات التوصيل
+                </a></li>
+            <li><a href="./track-my-order.html"><img src="../media/icons/footerLink.svg" alt=""> تتبع الطلب
+              </a></li>
+            <li><a href="./wholesale.html"><img src="../media/icons/footerLink.svg" alt=""> اشتراك كبائع  </a></li>
+          </ul>
+        </div>
+        <div class="linkGroup">
+          <h2>سياسات المتجر</h2>
+          <ul>
+            <li><a href="./privacy-policy.html"><img src="../media/icons/footerLink.svg" alt=""> السياسة والخصوصية
+              </a></li>
+            <li><a href="./terms-conditions.html"><img src="../media/icons/footerLink.svg" alt=""> الشروط والاحكام </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- end footer -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+  <script>
+    const from = [30.0444, 31.2357]; // Cairo, Egypt
+    const to = [29.9784, 31.1325]; // Giza, Egypt
+
+    var map = L.map("map").setView([from[0], from[1]], 12);
+
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution: "",
+    }).addTo(map);
+
+    var redPinIcon = L.icon({
+      iconUrl: '../media/icons/marker.webp',
+      iconSize: [25, 41],
+      iconAnchor: [12, 41],
+      popupAnchor: [1, -34]
+    });
+
+    var locations = [from, to];
+
+    locations.forEach((loc, index) => {
+      L.marker(loc, { icon: redPinIcon }).addTo(map);
+    });
+
+    var borderLine = L.Routing.control({
+      waypoints: locations.map((loc) => L.latLng(loc)),
+      routeWhileDragging: false,
+      addWaypoints: false,
+      draggableWaypoints: false,
+      createMarker: () => null,
+      show: false,
+      lineOptions: {
+        styles: [{ color: '#0b12d9', opacity: 1, weight: 8 }]
+      }
+    }).addTo(map);
+
+    var mainLine = L.Routing.control({
+      waypoints: locations.map((loc) => L.latLng(loc)),
+      routeWhileDragging: false,
+      addWaypoints: false,
+      draggableWaypoints: false,
+      createMarker: () => null,
+      show: false,
+      lineOptions: {
+        styles: [{ color: '#0f53ff', opacity: 1, weight: 5 }]
+      }
+    }).addTo(map);
+  </script>
+  <script src="../js/map.js"></script>
+  <script src="../js/products.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <script src="../js/swiper.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
