@@ -450,6 +450,11 @@ nav {
           user-select: none;
   overflow: hidden;
 }
+@media (max-width: 800px) {
+  .home {
+    background: linear-gradient(-104.02deg, #6C6C6C 67.22%, #2B2B2B 99.1%);
+  }
+}
 .home .img {
   position: absolute;
   width: 100%;
