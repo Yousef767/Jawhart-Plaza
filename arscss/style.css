@@ -449,7 +449,6 @@ nav {
      -moz-user-select: none;
           user-select: none;
   overflow: hidden;
-  background: linear-gradient(-104.02deg, #453d3d 67.22%, #819792 99.1%);
 }
 .home .img {
   position: absolute;
@@ -5109,7 +5108,6 @@ header h1 {
 
 .pageBanner2 {
   height: auto;
-  background: linear-gradient(180deg, #414945 50.13%, #9cafa5 131.1%);
 }
 .pageBanner2 .ktx {
   display: flex;
